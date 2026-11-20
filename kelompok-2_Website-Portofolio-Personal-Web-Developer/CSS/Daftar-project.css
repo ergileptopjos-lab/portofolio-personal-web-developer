@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #fff;
+    line-height: 1.6;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 30px;
+    background-color: #0881f9;
+}
+.logo {
+    flex-shrink: 0;
+}
+.logo img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 5px;
+    list-style: none;
+}
+.nav-links a {
+    display: block;
+    padding: 8px 12px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.nav-links a:hover {
+    background-color: #0666cb;
+}
+.daftar {
+    width: 100%;
+    max-width: 1200px;
+    margin: 45px auto;
+    padding: 0 24px;
+}
+.kembali {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #007bff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.kembali:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.judul-section {
+    margin-bottom: 25px;
+}
+.judul-section h1 {
+    margin-bottom: 5px;
+    font-size: 28px;
+    line-height: 1.3;
+}
+.judul-section p {
+    color: #555;
+    font-size: 14px;
+}
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+.project-table {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+    text-align: left;
+}
+.project-table thead {
+    color: #fff;
+    background-color: #0881f9;
+}
+.project-table th {
+    padding: 14px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    border: 1px solid #0773df;
+}
+.project-table td {
+    padding: 14px 12px;
+    font-size: 13px;
+    vertical-align: middle;
+    border: 1px solid #e2e2e2;
+}
+.project-table tbody tr {
+    background-color: #fff;
+}
+.project-table tbody tr:hover {
+    background-color: #edf5ff;
+}
+.project-table .kolom-nomor {
+    width: 55px;
+    text-align: center;
+}
+.project-table .kolom-gambar {
+    width: 145px;
+}
+.project-image {
+    display: block;
+    width: 120px;
+    height: 75px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.project-name {
+    min-width: 150px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.project-table .kolom-deskripsi {
+    min-width: 220px;
+    color: #555;
+}
+.project-table .kolom-aksi {
+    min-width: 120px;
+}
+.project-button {
+    display: inline-block;
+    padding: 8px 12px;
+    color: #fff;
+    background-color: #007bff;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 5px;
+}
+.project-button:hover {
+    background-color: #0056b3;
+}
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f7fa;
+    border-top: 1px solid #ddd;
+}
+.footer p {
+    color: #666;
+    font-size: 13px;
+}
+@media (max-width: 768px) {
+    .navbar {
+        padding: 12px 18px;
+        flex-wrap: wrap;
+    }
+    .nav-links {
+        justify-content: flex-start;
+        gap: 3px;
+    }
+    .nav-links a {
+        padding: 7px 9px;
+        font-size: 13px;
+    }
+    .daftar {
+        margin: 35px auto;
+        padding: 0 18px;
+    }
+    .judul-section h1 {
+        font-size: 26px;
+    }
+    .project-table {
+        min-width: 800px;
+    }
+}
+@media (max-width: 480px) {
+    .navbar {
+        justify-content: center;
+        gap: 10px;
+        padding: 12px 10px;
+    }
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 2px;
+    }
+    .nav-links a {
+        padding: 7px;
+        font-size: 12px;
+    }
+    .daftar {
+        margin: 28px auto;
+        padding: 0 14px;
+    }
+    .kembali {
+        margin-bottom: 16px;
+        font-size: 13px;
+    }
+    .judul-section {
+        margin-bottom: 20px;
+    }
+    .judul-section h1 {
+        font-size: 24px;
+    }
+    .judul-section p {
+        font-size: 13px;
+    }
+    .table-container {
+        overflow: visible;
+        border: none;
+    }
+    .project-table {
+        display: block;
+        min-width: 0;
+    }
+    .project-table thead {
+        display: none;
+    }
+    .project-table tbody {
+        display: block;
+        width: 100%;
+    }
+    .project-table tbody tr {
+        display: block;
+        margin-bottom: 16px;
+        padding: 12px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+    }
+    .project-table td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 13px;
+        overflow-wrap: anywhere;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+    .project-table .kolom-nomor {
+        width: 100%;
+        text-align: left;
+        color: #666;
+    }
+    .project-table .kolom-gambar {
+        width: 100%;
+    }
+    .project-table .kolom-deskripsi {
+        min-width: 0;
+        color: #555;
+    }
+    .project-table .kolom-aksi {
+        min-width: 0;
+        padding-bottom: 2px;
+        border-bottom: none;
+    }
+    .project-image {
+        width: 100%;
+        max-width: 200px;
+        height: 115px;
+        object-fit: cover;
+    }
+    .project-name {
+        min-width: 0;
+        font-size: 13px;
+    }
+    .project-button {
+        padding: 9px 12px;
+        font-size: 12px;
+    }
+    .footer {
+        margin-top: 25px;
+        padding: 18px 12px;
+    }
+    .footer p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 360px) {
+    .nav-links a {
+        padding: 6px;
+        font-size: 11px;
+    }
+    .daftar {
+        padding: 0 10px;
+    }
+    .judul-section h1 {
+        font-size: 22px;
+    }
+    .project-table tbody tr {
+        padding: 10px;
+    }
+    .project-table td {
+        font-size: 12px;
+    }
+    .project-image {
+        height: 100px;
+    }
+}
